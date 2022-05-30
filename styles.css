@@ -44,6 +44,7 @@ ul{
     align-items: center;
     height: 60px;
     padding: 20px 0px;
+    cursor: hand;
 }
 
 .nav-brand {
@@ -71,6 +72,20 @@ ul{
     margin: 20px;
 }
 
+.busqueda {
+    border-radius: 25px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.nav-menu-right li a .busqueda:hover {
+    border-radius: 25px;
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
 /* PRINCIPAL */
 
 hr {
@@ -232,6 +247,16 @@ hr {
 
 /* RESOLUTION */
 
+@media (max-width: 900px) {
+    .nav-menu-right li a .busqueda:hover {
+        border-radius: 25px;
+        width: 90px;
+        height: 20px;
+        text-align: center;
+        transition: 0.5s;
+    }
+}
+
 @media (max-width: 850px) {
     * {
         font-size: medium;
@@ -284,7 +309,13 @@ hr {
         right: 15px;
         z-index: 2;
     }
-
+    .nav-menu-right li a .busqueda:hover {
+        border-radius: 25px;
+        width: 200px;
+        height: 20px;
+        text-align: center;
+        transition: 0.5s;
+    }
 }
 
 
